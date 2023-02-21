@@ -1,13 +1,25 @@
-import { useState } from "react";
-import Number from "./components/Number";
+import React, { useState } from "react";
 import "./App.css";
+import Led from "./components/Led";
 
 function App() {
-  const [num, setNum] = useState(10);
+  const [isOn, setOn] = useState(false);
+
+  const cancelar = (obj) => {
+    return obj.preventDefault();
+  };
 
   return (
     <>
-      <Number num={num} setNum={setNum} />
+      <h1>Boa tarde</h1>
+      <Led isOn={isOn} setOn={setOn} />
+      <a
+        href="https://ecosia.org/"
+        target="_blank"
+        onClick={(e) => cancelar(e)}
+      >
+        Ecosia
+      </a>
     </>
   );
 }
