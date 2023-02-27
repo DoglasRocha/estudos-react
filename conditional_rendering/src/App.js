@@ -11,12 +11,15 @@ function App() {
     switch (c) {
       case 0:
         return red;
+        break;
 
       case 1:
         return green;
+        break;
 
       case 2:
         return blue;
+        break;
     }
   };
 
@@ -24,12 +27,11 @@ function App() {
     setColor((color + 1) % 3);
   };
 
-  setInterval(changeColor, 500);
+  setInterval(changeColor, 1000);
 
   return (
     <>
       <h1 style={returnColor(color)}>Doglas Rocha</h1>
-      <button onClick={() => changeColor()}>Muda cor</button>
     </>
   );
 }
