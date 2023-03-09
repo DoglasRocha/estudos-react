@@ -25,37 +25,7 @@ function App() {
     }
   };
 
-  return (
-    <>
-      <label>Digite seu nome: </label>
-      <input
-        type="text"
-        name="name"
-        onChange={(e) => handlerOnChange(e)}
-        value={form.name}
-      />
-      <br />
-      <label>Digite seu Curso: </label>
-      <input
-        type="text"
-        name="course"
-        onChange={(e) => handlerOnChange(e)}
-        value={form.course}
-      />
-      <br />
-      <label>Digite seu Ano: </label>
-      <input
-        type="text"
-        name="year"
-        onChange={(e) => handlerOnChange(e)}
-        value={form.year}
-      />
-      <br />
-      <p>Nome digitado: {form.name}</p>
-      <p>Curso digitado: {form.course}</p>
-      <p>Ano digitado: {form.year}</p>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
